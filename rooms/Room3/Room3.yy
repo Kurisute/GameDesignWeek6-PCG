@@ -46,7 +46,7 @@
     "path": "folders/Rooms/Dungeons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Room1",
+  "name": "Room3",
   "tags": [],
   "resourceType": "GMRoom",
 }
