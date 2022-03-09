@@ -10,10 +10,10 @@ walking = false;
 
 bomb = 0;
 
-
 bombs = 0;
 sp = 5;
 range = 2;
 bombmax = 1;
 
-
+HP = 3;
+HP_lock = false;

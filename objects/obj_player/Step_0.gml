@@ -49,3 +49,14 @@ if (bomb && bombs < bombmax) {
 	newbomb.range = range;
 	newbomb.owner = self;
 }
+
+if(HP_lock){
+	if(alarm[0] == -1)
+		alarm[0] = 150;
+	if(alarm[0] > 1 and alarm[0] % 2 != 0){
+		visible = false;
+	}
+	else{
+		visible = true;
+	}
+}
