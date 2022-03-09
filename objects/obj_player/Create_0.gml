@@ -26,3 +26,5 @@ faceup = sprite_index;
 facedown = sprite_index;
 faceleft = sprite_index;
 faceright = sprite_index;
+
+image_speed = sp * 0.05;
