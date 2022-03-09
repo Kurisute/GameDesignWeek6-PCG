@@ -50,6 +50,7 @@ if (bomb && bombs < bombmax) {
 	newbomb.owner = self;
 }
 
+// Set HP_lock
 if(HP_lock){
 	if(alarm[0] == -1)
 		alarm[0] = 150;
@@ -59,4 +60,21 @@ if(HP_lock){
 	else{
 		visible = true;
 	}
+}
+
+// Change face and walking status
+if(vvec == 1){
+	face = SOUTH;
+	walking = true;
+}else if (vvec == -1){
+	face = NORTH;
+	walking = true;
+}else if(hvec == 1){
+	face = EAST;
+	walking = true;
+}else if(hvec == -1){
+	face = WEST;
+	walking = true;
+}else{
+	walking = false;
 }

@@ -12,7 +12,7 @@ bomb = 0;
 
 bombs = 0;
 sp = 5;
-range = 2;
+range = 1;
 bombmax = 1;
 
 HP = 3;

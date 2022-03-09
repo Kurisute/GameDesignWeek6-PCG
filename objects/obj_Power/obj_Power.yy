@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_Burger",
-    "path": "sprites/spr_Burger/spr_Burger.yy",
+    "name": "spr_Power",
+    "path": "sprites/spr_Power/spr_Power.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects/Items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Burger",
+  "name": "obj_Power",
   "tags": [],
   "resourceType": "GMObject",
 }

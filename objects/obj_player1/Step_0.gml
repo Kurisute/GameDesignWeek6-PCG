@@ -13,22 +13,6 @@ bomb = keyboard_check_pressed(ord("F"));
 event_inherited();
 
 // Change sprite by movement
-if(vvec == 1){
-	face = SOUTH;
-	walking = true;
-}else if (vvec == -1){
-	face = NORTH;
-	walking = true;
-}else if(hvec == 1){
-	face = EAST;
-	walking = true;
-}else if(hvec == -1){
-	face = WEST;
-	walking = true;
-}else{
-	walking = false;
-}
-
 if(walking){
 	switch (face){
 		case SOUTH: sprite_index = spr_Player_walkdown; break;
