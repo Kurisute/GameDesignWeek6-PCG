@@ -56,12 +56,16 @@ for (var _y = 1; _y < height_-1; _y++) {
 	}
 }
 	
-for (var _y = 1; _y < height_-1; _y++) {
-	for (var _x = 1; _x < width_-1; _x++) {
-		if (grid_[# _x, _y] == FLOOR) {
+for (var _y = 0; _y < height_; _y++) {
+	for (var _x = 0; _x < width_; _x++) {
+		if (_x == 0 || _x == 28 || _y == 0 || _y == 28) tilemap_set(_wall_map_id, 4, _x, _y);
+		else if (_x mod 2 == 0 && _y mod 2 == 0)  tilemap_set(_wall_map_id, 4, _x, _y);
+		else if (grid_[# _x, _y] == FLOOR) {
+			
 			if (_x mod 2 == _y mod 2) tilemap_set(_wall_map_id, 2, _x, _y);
 			else  tilemap_set(_wall_map_id, 3, _x, _y);
-		}
+
+		} else tilemap_set(_wall_map_id, 1, _x, _y);
 	}
 }
 	
