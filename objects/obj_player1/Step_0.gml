@@ -9,5 +9,7 @@ right = keyboard_check(ord("D"));
  down = keyboard_check(ord("S"));
  
 bomb = keyboard_check_pressed(ord("F"));
+
+
 event_inherited();
 

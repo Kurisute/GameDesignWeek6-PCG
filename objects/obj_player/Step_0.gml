@@ -31,6 +31,7 @@ y += vsp;
 
 if (bomb && bombs < bombmax) {
 	bombs++;
-	instance_create_layer((x div 32) * 32, (y div 32) * 32, "instances", obj_bomb);
-	
+	newbomb = instance_create_layer((x div 32) * 32, (y div 32) * 32, "instances", obj_bomb);
+	newbomb.range = range;
+	newbomb.owner = self;
 }

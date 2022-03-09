@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"Create_macros","path":"scripts/Create_macros/Create_macros.yy",},"order":2,},
+    {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":8,},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},"order":5,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":7,},
     {"id":{"name":"spr_Player_left","path":"sprites/spr_Player_left/spr_Player_left.yy",},"order":1,},
@@ -19,6 +20,7 @@
     {"id":{"name":"spr_Player_down","path":"sprites/spr_Player_down/spr_Player_down.yy",},"order":0,},
     {"id":{"name":"spr_Player_walkleft","path":"sprites/spr_Player_walkleft/spr_Player_walkleft.yy",},"order":5,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
+    {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":8,},
     {"id":{"name":"spr_Jelly","path":"sprites/spr_Jelly/spr_Jelly.yy",},"order":3,},
     {"id":{"name":"spr_Player_walkup","path":"sprites/spr_Player_walkup/spr_Player_walkup.yy",},"order":7,},
     {"id":{"name":"spr_Player_right","path":"sprites/spr_Player_right/spr_Player_right.yy",},"order":2,},
