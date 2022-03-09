@@ -2,7 +2,9 @@
   "resources": [
     {"id":{"name":"Create_macros","path":"scripts/Create_macros/Create_macros.yy",},"order":2,},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},"order":5,},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":7,},
     {"id":{"name":"spr_Player_left","path":"sprites/spr_Player_left/spr_Player_left.yy",},"order":1,},
+    {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"order":7,},
     {"id":{"name":"obj_Jelly","path":"objects/obj_Jelly/obj_Jelly.yy",},"order":2,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":3,},
     {"id":{"name":"spr_bricks","path":"sprites/spr_bricks/spr_bricks.yy",},"order":6,},
@@ -24,7 +26,7 @@
     {"id":{"name":"bomb_explosion","path":"sounds/bomb_explosion/bomb_explosion.yy",},"order":1,},
     {"id":{"name":"spr_Player_walkdown","path":"sprites/spr_Player_walkdown/spr_Player_walkdown.yy",},"order":4,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":4,},
-    {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":6,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":6,},
     {"id":{"name":"Init","path":"scripts/Init/Init.yy",},"order":1,},
     {"id":{"name":"RoomGen","path":"scripts/RoomGen/RoomGen.yy",},"order":0,},
     {"id":{"name":"spr_Bomb_red","path":"sprites/spr_Bomb_red/spr_Bomb_red.yy",},"order":5,},
