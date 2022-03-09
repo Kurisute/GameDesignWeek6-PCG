@@ -10,6 +10,37 @@ right = keyboard_check(ord("D"));
  
 bomb = keyboard_check_pressed(ord("F"));
 
-
 event_inherited();
 
+// Change sprite by movement
+if(vvec == 1){
+	face = SOUTH;
+	walking = true;
+}else if (vvec == -1){
+	face = NORTH;
+	walking = true;
+}else if(hvec == 1){
+	face = EAST;
+	walking = true;
+}else if(hvec == -1){
+	face = WEST;
+	walking = true;
+}else{
+	walking = false;
+}
+
+if(walking){
+	switch (face){
+		case SOUTH: sprite_index = spr_Player_walkdown; break;
+		case NORTH: sprite_index = spr_Player_walkup; break;
+		case EAST: sprite_index = spr_Player_walkright; break;
+		case WEST: sprite_index = spr_Player_walkleft; break;
+	}
+}else{
+	switch (face){
+		case SOUTH: sprite_index = spr_Player_down; break;
+		case NORTH: sprite_index = spr_Player_up; break;
+		case EAST: sprite_index = spr_Player_right; break;
+		case WEST: sprite_index = spr_Player_left; break;
+	}
+}

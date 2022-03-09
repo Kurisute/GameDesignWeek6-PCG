@@ -187,6 +187,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/food","resourceVersion":"1.0","name":"08_bread_dish.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/food","resourceVersion":"1.0","name":"82_pizza_dish.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/food","resourceVersion":"1.0","name":"33_curry_dish.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"RogueEnvironment16x16.png","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2022.2.0.614",
