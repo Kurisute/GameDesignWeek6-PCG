@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_Bomb_red",
-    "path": "sprites/spr_Bomb_red/spr_Bomb_red.yy",
+    "name": "spr_bomb_red",
+    "path": "sprites/spr_bomb_red/spr_bomb_red.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Bomb_red",
+  "name": "obj_bomb",
   "tags": [],
   "resourceType": "GMObject",
 }

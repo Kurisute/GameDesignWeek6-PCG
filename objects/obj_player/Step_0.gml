@@ -14,7 +14,8 @@ if (place_meeting(x + hsp, y, obj_wall)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
-
+	// if (y mod 32 < 8) y++;
+	// else if (y mod 32 > 24) y--;
 }
 
 // vertical collision
@@ -27,3 +28,9 @@ if (place_meeting(x, y + vsp, obj_wall)) {
 
 x += hsp;
 y += vsp;
+
+if (bomb && bombs < bombmax) {
+	bombs++;
+	instance_create_layer((x div 32) * 32, (y div 32) * 32, "instances", obj_bomb);
+	
+}

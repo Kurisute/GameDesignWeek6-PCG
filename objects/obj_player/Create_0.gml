@@ -6,6 +6,10 @@ down = 0;
 left = 0;
 right = 0;
 
-bombs = 3;
+bomb = 0;
+
+
+bombs = 0;
 sp = 5;
 range = 3;
+bombmax = 3
