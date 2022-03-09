@@ -6,9 +6,6 @@ down = 0;
 left = 0;
 right = 0;
 
-hvec = right - left;
-vvec = down - up;
-
 bombs = 3;
-spd = 5;
+sp = 5;
 range = 3;
