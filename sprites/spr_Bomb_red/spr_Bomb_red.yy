@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Bomb_red","path":"sprites/spr_Bomb_red/spr_Bomb_red.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_Bomb_red",
     "tags": [],
     "resourceType": "GMSequence",

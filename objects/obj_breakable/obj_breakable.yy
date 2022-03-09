@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_Iron",
-    "path": "sprites/spr_Iron/spr_Iron.yy",
+    "name": "spr_bricks",
+    "path": "sprites/spr_bricks/spr_bricks.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_wall",
+    "path": "objects/obj_wall/obj_wall.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Iron",
+  "name": "obj_breakable",
   "tags": [],
   "resourceType": "GMObject",
 }

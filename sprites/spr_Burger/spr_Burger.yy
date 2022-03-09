@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Burger","path":"sprites/spr_Burger/spr_Burger.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_Burger",
     "tags": [],
     "resourceType": "GMSequence",
