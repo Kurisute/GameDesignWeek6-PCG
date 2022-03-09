@@ -14,8 +14,13 @@ if (place_meeting(x + hsp, y, obj_wall)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
-	// if (y mod 32 < 8) y++;
-	// else if (y mod 32 > 24) y--;
+	if (vvec == 0) {
+		if (position_meeting(x+16*hvec, y+16, obj_wall) && !position_meeting(x+16*hvec, y-16, obj_wall)) {
+			vsp -= sp;
+		} else if (position_meeting(x+16*hvec, y-16, obj_wall) && !position_meeting(x+16*hvec, y+16, obj_wall)) {
+			vsp += sp;
+		}
+	}
 }
 bombcolx = instance_place(x + hsp, y, obj_bomb);
 if (bombcolx != noone && !bombcolx.intangible) {
@@ -31,6 +36,13 @@ if (place_meeting(x, y + vsp, obj_wall)) {
 		y += sign(vsp);
 	}
 	vsp = 0;
+	if (hvec == 0) {
+		if (position_meeting(x+16, y+16*vvec, obj_wall) && !position_meeting(x-16, y+16*vvec, obj_wall)) {
+			hsp -= sp;
+		} else if (position_meeting(x-16, y+16*vvec, obj_wall) && !position_meeting(x+16, y+16*vvec, obj_wall)) {
+			hsp += sp;
+		}
+	}
 }
 bombcoly = instance_place(x, y + vsp, obj_bomb);
 if (bombcoly != noone && !bombcoly.intangible) {
