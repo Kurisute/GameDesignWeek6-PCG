@@ -15,9 +15,9 @@ if (place_meeting(x + hsp, y, obj_wall)) {
 	}
 	hsp = 0;
 	if (vvec == 0) {
-		if (position_meeting(x+16*hvec, y+16, obj_wall) && !position_meeting(x+16*hvec, y-16, obj_wall)) {
+		if (position_meeting(x+16*hvec, y+16, obj_wall) && !position_meeting(x+16*hvec, y-16, obj_wall) && !position_meeting(x, y-16, obj_wall)) {
 			vsp -= sp;
-		} else if (position_meeting(x+16*hvec, y-16, obj_wall) && !position_meeting(x+16*hvec, y+16, obj_wall)) {
+		} else if (position_meeting(x+16*hvec, y-16, obj_wall) && !position_meeting(x+16*hvec, y+16, obj_wall) && !position_meeting(x, y+16, obj_wall)) {
 			vsp += sp;
 		}
 	}
@@ -37,9 +37,9 @@ if (place_meeting(x, y + vsp, obj_wall)) {
 	}
 	vsp = 0;
 	if (hvec == 0) {
-		if (position_meeting(x+16, y+16*vvec, obj_wall) && !position_meeting(x-16, y+16*vvec, obj_wall)) {
+		if (position_meeting(x+16, y+16*vvec, obj_wall) && !position_meeting(x-16, y+16*vvec, obj_wall) && !position_meeting(x-16, y, obj_wall)) {
 			hsp -= sp;
-		} else if (position_meeting(x-16, y+16*vvec, obj_wall) && !position_meeting(x+16, y+16*vvec, obj_wall)) {
+		} else if (position_meeting(x-16, y+16*vvec, obj_wall) && !position_meeting(x+16, y+16*vvec, obj_wall) && !position_meeting(x+16, y, obj_wall)) {
 			hsp += sp;
 		}
 	}
