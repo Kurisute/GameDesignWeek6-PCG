@@ -1,8 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+// Movement Status
+face = SOUTH;
+walking = false;
 
-up = 0;
-down = 0;
-left = 0;
-right = 0;
-dir = 5;
+// Player Status
+health_point = 5;

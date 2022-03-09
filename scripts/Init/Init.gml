@@ -9,4 +9,7 @@ function Init(){
 		global.Rooms[i] = room_add();
 	}
 	
+	
+	//Player Infos
+	global.Player_HealthLimit = 5;
 }
