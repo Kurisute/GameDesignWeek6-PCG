@@ -7,11 +7,11 @@ if (range > 0) {
 	next.x += lengthdir_x(32, direction);
 	next.y += lengthdir_y(32, direction);
 	next.direction = direction;
-	
-	switch (direction){
-		case 0: sprite_index = spr_explosion_right; break;
-		case 90: sprite_index = spr_explosion_up; break;
-		case 180: sprite_index = spr_explosion_left; break;
-		case 270: sprite_index = spr_explosion_down; break;
-	}
+}
+
+switch (direction){
+	case 0: sprite_index = spr_explosion_right; break;
+	case 90: sprite_index = spr_explosion_up; break;
+	case 180: sprite_index = spr_explosion_left; break;
+	case 270: sprite_index = spr_explosion_down; break;
 }

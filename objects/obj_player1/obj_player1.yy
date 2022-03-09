@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_Player_down",
-    "path": "sprites/spr_Player_down/spr_Player_down.yy",
+    "name": "spr_player_collision",
+    "path": "sprites/spr_player_collision/spr_player_collision.yy",
   },
   "solid": false,
   "visible": true,
