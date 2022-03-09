@@ -59,7 +59,8 @@ for (var _y = 1; _y < height_-1; _y++) {
 for (var _y = 1; _y < height_-1; _y++) {
 	for (var _x = 1; _x < width_-1; _x++) {
 		if (grid_[# _x, _y] == FLOOR) {
-		    tilemap_set(_wall_map_id, 1, _x, _y);
+			if (_x mod 2 == _y mod 2) tilemap_set(_wall_map_id, 2, _x, _y);
+			else  tilemap_set(_wall_map_id, 3, _x, _y);
 		}
 	}
 }
