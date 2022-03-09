@@ -17,10 +17,24 @@ if (place_meeting(x + hsp, y, obj_wall)) {
 	// if (y mod 32 < 8) y++;
 	// else if (y mod 32 > 24) y--;
 }
+bombcolx = instance_place(x + hsp, y, obj_bomb);
+if (bombcolx != noone && !bombcolx.intangible) {
+	while (!place_meeting(x + sign(hsp), y, obj_bomb)) {
+		x += sign(hsp);
+	}
+	hsp = 0;
+}
 
 // vertical collision
 if (place_meeting(x, y + vsp, obj_wall)) {
 	while (!place_meeting(x, y + sign(vsp), obj_wall)) {
+		y += sign(vsp);
+	}
+	vsp = 0;
+}
+bombcoly = instance_place(x, y + vsp, obj_bomb);
+if (bombcoly != noone && !bombcoly.intangible) {
+	while (!place_meeting(x, y + sign(vsp), obj_bomb)) {
 		y += sign(vsp);
 	}
 	vsp = 0;
