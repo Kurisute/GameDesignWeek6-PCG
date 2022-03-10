@@ -12,8 +12,9 @@ bomb = 0;
 
 bombs = 0;
 sp = 3;
-range = 3;
+range = 2;
 bombmax = 1;
+spike = false;
 
 HP = 3;
 HP_lock = false;

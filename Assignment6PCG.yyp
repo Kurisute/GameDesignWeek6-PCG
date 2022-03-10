@@ -50,6 +50,7 @@
     {"id":{"name":"spr_Player_walkdown","path":"sprites/spr_Player_walkdown/spr_Player_walkdown.yy",},"order":4,},
     {"id":{"name":"spr_player_collision","path":"sprites/spr_player_collision/spr_player_collision.yy",},"order":15,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":4,},
+    {"id":{"name":"spr_bomb_spike","path":"sprites/spr_bomb_spike/spr_bomb_spike.yy",},"order":7,},
     {"id":{"name":"spr_Player2_right","path":"sprites/spr_Player2_right/spr_Player2_right.yy",},"order":10,},
     {"id":{"name":"spr_bomb_blue","path":"sprites/spr_bomb_blue/spr_bomb_blue.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":6,},

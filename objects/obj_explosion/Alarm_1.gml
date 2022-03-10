@@ -7,6 +7,7 @@ if (range > 0) {
 	next.x += lengthdir_x(32, direction);
 	next.y += lengthdir_y(32, direction);
 	next.direction = direction;
+	next.spike = spike;
 }
 
 switch (direction){

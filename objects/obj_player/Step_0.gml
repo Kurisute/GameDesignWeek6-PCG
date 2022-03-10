@@ -63,6 +63,10 @@ if (bomb && bombs < bombmax) {
 	newbomb = instance_create_layer((x div 32) * 32, (y div 32) * 32, "instances", obj_bomb);
 	newbomb.range = range;
 	newbomb.owner = self;
+	if (spike) {
+		newbomb.spike = true;
+		newbomb.sprite_index = spr_bomb_spike;
+	}
 }
 
 if (position_meeting(x,y,obj_explosion)) {
