@@ -1,4 +1,4 @@
-// randomize()
+randomize()
 
 // Get the tile layer map id
 // var _wall_map_id = layer_tilemap_get_id("WallTiles");
