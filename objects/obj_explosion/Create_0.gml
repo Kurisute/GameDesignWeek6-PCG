@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 alarm[0] = 30;
-alarm[1] = 2;
+alarm[1] = 1;
