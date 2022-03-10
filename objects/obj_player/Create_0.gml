@@ -16,7 +16,7 @@ range = 2;
 bombmax = 1;
 spike = false;
 
-HP = 3;
+HP = 1;
 HP_lock = false;
 
 walkup = sprite_index;
