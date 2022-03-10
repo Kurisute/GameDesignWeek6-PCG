@@ -58,6 +58,19 @@ for (var _y = 1; _y < height_-1; _y++) {
 	
 for (var _y = 0; _y < height_; _y++) {
 	for (var _x = 0; _x < width_; _x++) {
+		d100 = irandom(99);
+		if (d100 < 90) {
+			switch (irandom(2)) {
+				case 0: newitem = obj_BombPlus; break;
+				case 1: newitem = obj_Boots; break;
+				case 2: newitem = obj_Power; break;
+			}
+		} else {
+			switch (irandom(1)) {
+				case 0: newitem = obj_SpikeBombs; break;
+				case 1: newitem = obj_Burger; break;
+			}
+		}
 		if (_x == 0 || _x == 28 || _y == 0 || _y == 28) {
 			//tilemap_set(_wall_map_id, 4, _x, _y);
 			instance_create_layer(_x * CELL_WIDTH, _y * CELL_HEIGHT, "level", obj_wall);
@@ -67,12 +80,6 @@ for (var _y = 0; _y < height_; _y++) {
 		} else if (grid_[# _x, _y] == FLOOR) {
 			
 			if (!irandom(19)) { // 1 in 20 chance of item appearing
-				switch (irandom(3)) {
-					case 0: newitem = obj_BombPlus; break;
-					case 1: newitem = obj_Boots; break;
-					case 2: newitem = obj_Burger; break;
-					case 3: newitem = obj_Power; break;
-				}
 				instance_create_layer(_x * CELL_WIDTH, _y * CELL_HEIGHT, "items", newitem);
 			}
 
@@ -80,20 +87,8 @@ for (var _y = 0; _y < height_; _y++) {
 			//tilemap_set(_wall_map_id, 1, _x, _y);
 			instance_create_layer(_x * CELL_WIDTH, _y * CELL_HEIGHT, "level", obj_breakable);
 			if (!irandom(3)) { // 1 in 4 chance of item appearing
-				switch (irandom(3)) {
-					case 0: newitem = obj_BombPlus; break;
-					case 1: newitem = obj_Boots; break;
-					case 2: newitem = obj_Burger; break;
-					case 3: newitem = obj_Power; break;
-				}
 				instance_create_layer(_x * CELL_WIDTH, _y * CELL_HEIGHT, "items", newitem);
 			}
-			
 		}
 	}
 }
-	
-	
-	
-	
-	
