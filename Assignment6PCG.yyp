@@ -14,6 +14,7 @@
     {"id":{"name":"spr_BombPlus","path":"sprites/spr_BombPlus/spr_BombPlus.yy",},"order":4,},
     {"id":{"name":"spr_Player2_down","path":"sprites/spr_Player2_down/spr_Player2_down.yy",},"order":8,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":7,},
+    {"id":{"name":"obj_player2","path":"objects/obj_player2/obj_player2.yy",},"order":12,},
     {"id":{"name":"spr_Player_left","path":"sprites/spr_Player_left/spr_Player_left.yy",},"order":1,},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},"order":7,},
     {"id":{"name":"spr_Ring","path":"sprites/spr_Ring/spr_Ring.yy",},"order":3,},
