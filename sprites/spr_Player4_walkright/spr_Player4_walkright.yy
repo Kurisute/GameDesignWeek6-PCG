@@ -38,7 +38,7 @@
     "spriteId": {"name":"spr_Player4_walkright","path":"sprites/spr_Player4_walkright/spr_Player4_walkright.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 9.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
