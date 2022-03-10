@@ -74,6 +74,7 @@ if (HP >= 0)
 
 	if (position_meeting(x,y,obj_explosion) && !HP_lock) {
 		HP -= 1;
+		if (HP == -1) global.living--;
 		HP_lock = true;
 	}
 

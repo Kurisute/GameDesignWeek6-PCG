@@ -13,6 +13,7 @@
     {"id":{"name":"spr_explosion_right","path":"sprites/spr_explosion_right/spr_explosion_right.yy",},"order":0,},
     {"id":{"name":"spr_BombPlus","path":"sprites/spr_BombPlus/spr_BombPlus.yy",},"order":4,},
     {"id":{"name":"spr_Player2_down","path":"sprites/spr_Player2_down/spr_Player2_down.yy",},"order":8,},
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":5,},
     {"id":{"name":"obj_player2","path":"objects/obj_player2/obj_player2.yy",},"order":12,},
     {"id":{"name":"spr_Player_left","path":"sprites/spr_Player_left/spr_Player_left.yy",},"order":1,},

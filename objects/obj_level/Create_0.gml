@@ -4,6 +4,7 @@
 // var _wall_map_id = layer_tilemap_get_id("WallTiles");
 
 global.timer = 0;
+global.living = instance_number(obj_player);
 
 // Set up grid
 width_ = room_width div CELL_WIDTH;
