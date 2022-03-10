@@ -8,7 +8,9 @@ if (range > 0) {
 	next.y += lengthdir_y(32, direction);
 	next.direction = direction;
 	next.spike = spike;
-}
+
+	image_index = 5;
+} else image_index = 2;
 
 switch (direction){
 	case 0: sprite_index = spr_explosion_right; break;
