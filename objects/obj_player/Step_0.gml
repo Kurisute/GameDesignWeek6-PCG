@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+xsnap = (x div 32) * 32;
+ysnap = (y div 32) * 32
+if (HP >= 0) {
 
-if (HP >= 0)
-{
-	
 	// === Input Handling ===
 	hvec = right - left;
 	vvec = down - up;
@@ -63,7 +63,7 @@ if (HP >= 0)
 
 	if (bomb && bombs < bombmax) {
 		bombs++;
-		audio_play_sound(snd_place,0,0);
+		audio_play_sound(snd_place, 0, 0);
 		newbomb = instance_create_layer((x div 32) * 32, (y div 32) * 32, "instances", obj_bomb);
 		newbomb.range = range;
 		newbomb.owner = self;
@@ -73,10 +73,13 @@ if (HP >= 0)
 		}
 	}
 
-	if (position_meeting(x,y,obj_explosion) && !HP_lock) {
-		audio_play_sound(snd_hit,0,0);
+	if (position_meeting(x, y, obj_explosion) && !HP_lock) {
+		audio_play_sound(snd_hit, 0, 0);
 		HP -= 1;
-		if (HP == -1) global.living--;
+		if (HP == -1) {
+			global.living--;
+			instance_create_layer(xsnap, ysnap, "items", obj_Burger);
+		}
 		HP_lock = true;
 	}
 
@@ -90,12 +93,12 @@ if (HP >= 0)
 			visible = true;
 		}
 	}
-	
+
 
 	if (HP == 0 && global.timer mod 6 == 0) {
-		smoke = instance_create_layer(x,y,"vfx",obj_smoke);
+		smoke = instance_create_layer(x, y, "vfx", obj_smoke);
 		smoke.direction = random(360);
-		smoke.speed = random_range(1,1.5);
+		smoke.speed = random_range(1, 1.5);
 	}
 
 	/*
@@ -123,4 +126,29 @@ if (HP >= 0)
 	} else {
 		walking = false;
 	}
+} else {
+
+
+	if (speedup > 0) {
+		speedup--;
+		itemdrop = instance_create_layer(xsnap, ysnap, "items", obj_Boots);
+		itemdrop.bounce = true;
+	}
+
+	if (bombsup > 0) {
+		bombsup--;
+		itemdrop = instance_create_layer(xsnap, ysnap, "items", obj_BombPlus);
+		itemdrop.bounce = true;
+	}
+
+	if (rangeup > 0) {
+		rangeup--;
+		itemdrop = instance_create_layer(xsnap, ysnap, "items", obj_Power);
+		itemdrop.bounce = true;
+	}
+	if (spike) {
+		itemdrop = instance_create_layer(xsnap, ysnap, "items", obj_SpikeBombs);
+		itemdrop.bounce = true;
+	}
+
 }

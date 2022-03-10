@@ -1,7 +1,8 @@
 /// @description Add 1 range to player
-
-other.range += 1;
-
+if (other.HP >= 0) {
+other.range++;
+other.rangeup++;
 // Inherit the parent event
 event_inherited();
 
+}

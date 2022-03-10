@@ -29,3 +29,7 @@ faceleft = sprite_index;
 faceright = sprite_index;
 
 image_speed = sp * 0.05;
+
+speedup = 0;
+rangeup = 0;
+bombsup = 0;
