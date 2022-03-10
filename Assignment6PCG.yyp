@@ -47,7 +47,7 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
     {"id":{"name":"spr_Player2_up","path":"sprites/spr_Player2_up/spr_Player2_up.yy",},"order":11,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":8,},
-    {"id":{"name":"spr_Jelly","path":"sprites/spr_Jelly/spr_Jelly.yy",},"order":2,},
+    {"id":{"name":"spr_Jelly","path":"sprites/spr_Jelly/spr_Jelly.yy",},"order":6,},
     {"id":{"name":"spr_Player_walkup","path":"sprites/spr_Player_walkup/spr_Player_walkup.yy",},"order":7,},
     {"id":{"name":"spr_Player_right","path":"sprites/spr_Player_right/spr_Player_right.yy",},"order":2,},
     {"id":{"name":"obj_BombPlus","path":"objects/obj_BombPlus/obj_BombPlus.yy",},"order":5,},
