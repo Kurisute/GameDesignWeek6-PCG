@@ -65,6 +65,11 @@ if (bomb && bombs < bombmax) {
 	newbomb.owner = self;
 }
 
+if (position_meeting(x,y,obj_explosion)) {
+	HP -= 1;
+	HP_lock = true;
+}
+
 // Set HP_lock
 if (HP_lock) {
 	if (alarm[0] == -1)
