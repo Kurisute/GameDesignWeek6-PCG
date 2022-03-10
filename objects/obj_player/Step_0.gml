@@ -63,6 +63,7 @@ if (HP >= 0)
 
 	if (bomb && bombs < bombmax) {
 		bombs++;
+		audio_play_sound(snd_place,0,0);
 		newbomb = instance_create_layer((x div 32) * 32, (y div 32) * 32, "instances", obj_bomb);
 		newbomb.range = range;
 		newbomb.owner = self;
@@ -73,6 +74,7 @@ if (HP >= 0)
 	}
 
 	if (position_meeting(x,y,obj_explosion) && !HP_lock) {
+		audio_play_sound(snd_hit,0,0);
 		HP -= 1;
 		if (HP == -1) global.living--;
 		HP_lock = true;

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_pickup.wav",
-  "duration": 0.211565,
+  "soundFile": "snd_hit.wav",
+  "duration": 0.12576,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_pickup",
+  "name": "snd_hit",
   "tags": [],
   "resourceType": "GMSound",
 }
