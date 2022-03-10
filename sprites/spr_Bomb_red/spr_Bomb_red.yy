@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 4,
   "bbox_right": 28,
-  "bbox_top": 5,
+  "bbox_top": 0,
   "bbox_bottom": 27,
   "HTile": false,
   "VTile": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 4,
+  "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a817df94-22a9-4342-91d8-6b9326e9c68f","path":"sprites/spr_bomb_red/spr_bomb_red.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a817df94-22a9-4342-91d8-6b9326e9c68f","path":"sprites/spr_bomb_red/spr_bomb_red.yy",},"LayerId":{"name":"4c303efb-9e6e-4ad2-9b5a-2a1aee9945a8","path":"sprites/spr_bomb_red/spr_bomb_red.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
