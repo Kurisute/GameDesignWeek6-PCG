@@ -11,7 +11,7 @@ walking = false;
 bomb = 0;
 
 bombs = 0;
-sp = 5;
+sp = 3;
 range = 3;
 bombmax = 1;
 

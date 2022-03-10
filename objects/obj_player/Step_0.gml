@@ -15,20 +15,14 @@ if (place_meeting(x + hsp, y, obj_wall)) {
 	}
 	hsp = 0;
 	if (vvec == 0) {
-		if (position_meeting(x+16*hvec, y+16, obj_wall) && !position_meeting(x+16*hvec, y-16, obj_wall) && !position_meeting(x, y-16, obj_wall)) {
-			vsp -= sp;
-		} else if (position_meeting(x+16*hvec, y-16, obj_wall) && !position_meeting(x+16*hvec, y+16, obj_wall) && !position_meeting(x, y+16, obj_wall)) {
-			vsp += sp;
+		if (position_meeting(x + 16 * hvec, y + 16, obj_wall) && !position_meeting(x + 16 * hvec, y - 16, obj_wall) && !position_meeting(x, y - 16, obj_wall)) {
+			vsp -= 2;
+		} else if (position_meeting(x + 16 * hvec, y - 16, obj_wall) && !position_meeting(x + 16 * hvec, y + 16, obj_wall) && !position_meeting(x, y + 16, obj_wall)) {
+			vsp += 2;
 		}
 	}
 }
-bombcolx = instance_place(x + hsp, y, obj_bomb);
-if (bombcolx != noone && !bombcolx.intangible) {
-	while (!place_meeting(x + sign(hsp), y, obj_bomb)) {
-		x += sign(hsp);
-	}
-	hsp = 0;
-}
+
 
 // vertical collision
 if (place_meeting(x, y + vsp, obj_wall)) {
@@ -37,13 +31,22 @@ if (place_meeting(x, y + vsp, obj_wall)) {
 	}
 	vsp = 0;
 	if (hvec == 0) {
-		if (position_meeting(x+16, y+16*vvec, obj_wall) && !position_meeting(x-16, y+16*vvec, obj_wall) && !position_meeting(x-16, y, obj_wall)) {
-			hsp -= sp;
-		} else if (position_meeting(x-16, y+16*vvec, obj_wall) && !position_meeting(x+16, y+16*vvec, obj_wall) && !position_meeting(x+16, y, obj_wall)) {
-			hsp += sp;
+		if (position_meeting(x + 16, y + 16 * vvec, obj_wall) && !position_meeting(x - 16, y + 16 * vvec, obj_wall) && !position_meeting(x - 16, y, obj_wall)) {
+			hsp -= 2;
+		} else if (position_meeting(x - 16, y + 16 * vvec, obj_wall) && !position_meeting(x + 16, y + 16 * vvec, obj_wall) && !position_meeting(x + 16, y, obj_wall)) {
+			hsp += 2;
 		}
 	}
 }
+
+bombcolx = instance_place(x + hsp, y, obj_bomb);
+if (bombcolx != noone && !bombcolx.intangible) {
+	while (!place_meeting(x + sign(hsp), y, obj_bomb)) {
+		x += sign(hsp);
+	}
+	hsp = 0;
+}
+
 bombcoly = instance_place(x, y + vsp, obj_bomb);
 if (bombcoly != noone && !bombcoly.intangible) {
 	while (!place_meeting(x, y + sign(vsp), obj_bomb)) {
@@ -63,30 +66,29 @@ if (bomb && bombs < bombmax) {
 }
 
 // Set HP_lock
-if(HP_lock){
-	if(alarm[0] == -1)
+if (HP_lock) {
+	if (alarm[0] == -1)
 		alarm[0] = 150;
-	if(alarm[0] > 1 and alarm[0] % 2 != 0){
+	if (alarm[0] > 1 and alarm[0] % 2 != 0) {
 		visible = false;
-	}
-	else{
+	} else {
 		visible = true;
 	}
 }
 
 // Change face and walking status
-if(vvec == 1){
+if (vvec == 1) {
 	face = SOUTH;
 	walking = true;
-}else if (vvec == -1){
+} else if (vvec == -1) {
 	face = NORTH;
 	walking = true;
-}else if(hvec == 1){
+} else if (hvec == 1) {
 	face = EAST;
 	walking = true;
-}else if(hvec == -1){
+} else if (hvec == -1) {
 	face = WEST;
 	walking = true;
-}else{
+} else {
 	walking = false;
 }
