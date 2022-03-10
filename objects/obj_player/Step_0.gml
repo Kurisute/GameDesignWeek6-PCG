@@ -72,7 +72,7 @@ if (HP >= 0)
 		}
 	}
 
-	if (position_meeting(x,y,obj_explosion)) {
+	if (position_meeting(x,y,obj_explosion) && !HP_lock) {
 		HP -= 1;
 		HP_lock = true;
 	}
@@ -87,6 +87,22 @@ if (HP >= 0)
 			visible = true;
 		}
 	}
+	
+
+	if (HP == 0 && global.timer mod 6 == 0) {
+		smoke = instance_create_layer(x,y,"vfx",obj_smoke);
+		smoke.direction = random(360);
+		smoke.speed = random_range(1,1.5);
+	}
+
+	/*
+	if (HP == 0 && global.timer div 2 mod 2 != 0) {
+		image_blend = c_red;
+	} else {
+		image_blend = c_white;
+	}
+	*/
+
 
 	// Change face and walking status
 	if (vvec == 1) {

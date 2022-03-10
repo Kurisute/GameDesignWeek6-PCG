@@ -3,7 +3,7 @@
 
 owner.bombs--;
 for (angle = 0; angle < 360; angle += 90) {
-	next = instance_create_layer(x,y,"instances",obj_explosion);
+	next = instance_create_layer(x,y,"vfx",obj_explosion);
 	next.range = range;
 	next.direction = angle;
 	next.spike = spike;
