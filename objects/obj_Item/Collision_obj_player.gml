@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-other.spike = true;
-
-// Inherit the parent event
-event_inherited();
+audio_play_sound(snd_pickup,0,0);
+instance_destroy();

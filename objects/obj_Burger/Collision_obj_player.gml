@@ -1,3 +1,5 @@
 /// @description Add 1 HP to Player
 other.HP = 1;
-instance_destroy();
+
+// Inherit the parent event
+event_inherited();

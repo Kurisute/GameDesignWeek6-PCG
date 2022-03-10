@@ -1,3 +1,7 @@
-/// @description Add 1 range to Player
+/// @description Add 1 range to player
+
 other.range += 1;
-instance_destroy();
+
+// Inherit the parent event
+event_inherited();
+
